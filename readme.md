@@ -1,11 +1,13 @@
-# Turborepo
-Battery included monorepo
+# 3Trees AI monorepo
 
-## Integration
-- `Turborepo` monorepo
-- `TSup` build
-- `Vitest` test
-- `ESLint` lint
-- `Prettier` format
-- `Husky` git hook
-- `Standard Version` release
+## Packages
+
+- `notion-ai`
+
+using [LangChain](https://js.langchain.com/docs/)
+
+## Get Started
+
+```ts
+import { NotionAI } from 'notion-ai'
+```
