@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "@vitest/coverage-c8": "^0.30.1",
+    "dotenv": "^16.0.3",
     "eslint": "^8.39.0",
     "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",

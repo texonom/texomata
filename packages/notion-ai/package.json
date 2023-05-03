@@ -24,6 +24,8 @@
     "pu": "pnpm publish"
   },
   "dependencies": {
+    "@3bases/notion-client": "1.1.0-alpha.1",
+    "hnswlib-node": "^1.4.2",
     "langchain": "^0.0.68"
   },
   "standard-version": {
