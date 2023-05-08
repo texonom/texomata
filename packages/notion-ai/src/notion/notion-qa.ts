@@ -9,7 +9,7 @@ import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
 import { NotionAI } from './notion-ai'
 
 export class NotionQA extends NotionAI {
-  vectorStore: HNSWLib
+  declare vectorStore: HNSWLib
 
   constructor({ temperature, openAIApiKey }: { temperature?: number; openAIApiKey?: string } = {}) {
     super()

@@ -1,11 +1,10 @@
 {
   "extends": "../../tsconfig.base",
   "compilerOptions": {
-    "composite": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "outDir": "build",
     "tsBuildInfoFile": "build/.tsbuildinfo",
     "emitDeclarationOnly": true
   },
-  "include": ["src", "test"]
+  "include": ["src/**/*.ts", "test/**/*.ts"]
 }
