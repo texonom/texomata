@@ -14,7 +14,7 @@
     "build"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=v12.22.12"
   },
   "scripts": {
     "build": "tsup",
@@ -24,9 +24,9 @@
     "pu": "pnpm publish"
   },
   "dependencies": {
-    "@3bases/notion-client": "1.1.0-alpha.1",
+    "@3bases/notion-client": "1.1.0",
     "hnswlib-node": "^1.4.2",
-    "langchain": "^0.0.68"
+    "langchain": "^0.0.71"
   },
   "standard-version": {
     "skip": {
