@@ -30,6 +30,7 @@ jobs:
 
       - name: Build
         run: |
+          pnpm turbo link
           pnpm build
 
       - name: Coverage
