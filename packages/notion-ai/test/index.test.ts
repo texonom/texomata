@@ -1,7 +1,7 @@
 import { test } from 'vitest'
 import dotenv from 'dotenv'
 
-import { NotionQA } from './'
+import { NotionQA } from '../src'
 
 dotenv.config()
 
