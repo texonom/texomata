@@ -1,7 +1,7 @@
 {
-  "name": "turboplate",
+  "name": "texomata",
   "description": "Monorepo template repository composed with turborepo etc",
-  "repository": "seonglae/turboplate",
+  "repository": "texonom/texomata",
   "author": "Alan Jo <sungle3737@gmail.com>",
   "license": "MIT",
   "version": "0.1.0",

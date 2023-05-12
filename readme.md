@@ -1,4 +1,4 @@
-# 3Trees AI monorepo
+# Texonom AI monorepo
 
 ## Packages
 
