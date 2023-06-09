@@ -2,7 +2,7 @@ import { OpenAI } from 'langchain/llms/openai'
 import { RetrievalQAChain } from 'langchain/chains'
 import { HNSWLib } from 'langchain/vectorstores/hnswlib'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
-import { NotionAPI } from '@3bases/notion-client'
+import { NotionAPI } from '@texonom/nclient'
 import { Document } from 'langchain/document'
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
 
