@@ -23,7 +23,7 @@ export class NotionQA extends NotionAI<OpenAI, RetrievalQAChain, HNSWLib> {
     this.chain = RetrievalQAChain.fromLLM(this.llm, this.retriever)
   }
 
-  async ingest(id: string, path: string = 'store.pkl') {
+  async ingest(id: string, path: string = 'store') {
     const notionClient = new NotionAPI()
     const page = notionClient.getPage(id)
     const splitter = new RecursiveCharacterTextSplitter({ chunkSize: 10, chunkOverlap: 1 })
