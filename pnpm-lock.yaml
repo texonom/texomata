@@ -65,9 +65,9 @@ importers:
 
   packages/notion-ai:
     dependencies:
-      '@3bases/notion-client':
-        specifier: 1.1.0
-        version: 1.1.0
+      '@texonom/nclient':
+        specifier: 1.1.1
+        version: 1.1.1
       '@xenova/transformers':
         specifier: ^2.1.1
         version: 2.1.1
@@ -79,31 +79,6 @@ importers:
         version: 0.0.92(hnswlib-node@1.4.2)
 
 packages:
-
-  /@3bases/notion-client@1.1.0:
-    resolution: {integrity: sha512-kcXAjBtXclRPKtGQ6WVcn7TN6T9NIrXdMJC8HSVywFOnzVBchxopZIa27OIL8FeBT1R9algHNYMqvz0asco0jw==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@3bases/notion-types': 1.1.0
-      '@3bases/notion-utils': 1.1.0
-      p-map: 5.5.0
-    dev: false
-
-  /@3bases/notion-types@1.1.0:
-    resolution: {integrity: sha512-qmg5jLpqBHTfFrHvX7mG/u+86PzDuqvfJkd4FDmU1+6sMCWNCsnuqdeaspP9pB8d39vBsMIRH6sTJm5gSBxbLA==}
-    engines: {node: '>=12'}
-    dev: false
-
-  /@3bases/notion-utils@1.1.0:
-    resolution: {integrity: sha512-YFUyJhGJVx23F1cHx+9PtnfiFV+oga6uvTBwXM8NUmBBMfN0xDRHIuesX0LN/n0PYvKEM/p6cwwHsCo8agH1jA==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@3bases/notion-types': 1.1.0
-      is-url-superb: 6.1.0
-      mem: 9.0.2
-      normalize-url: 7.2.0
-      p-queue: 7.3.4
-    dev: false
 
   /@ampproject/remapping@2.2.1:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
@@ -543,6 +518,31 @@ packages:
   /@rushstack/eslint-patch@1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: true
+
+  /@texonom/nclient@1.1.1:
+    resolution: {integrity: sha512-U36yP76eg+/Aeyr3uiHV0qOsYk6BYz8dydJGu8JaNU0RzOM35Mz2cukhG0mD/zhKONamaNRPdTlhix2X8sgEng==}
+    engines: {node: '>=v12.22.12'}
+    dependencies:
+      '@texonom/ntypes': 1.1.1
+      '@texonom/nutils': 1.1.1
+      p-map: 5.5.0
+    dev: false
+
+  /@texonom/ntypes@1.1.1:
+    resolution: {integrity: sha512-vuKGAM1qjz15kUh46/WM5lBjWpNOx6Rw92po+6ejXLsOBALYVwmOnWB8yGVxujEvIS86K7dzf9v5vNsh7f80Sw==}
+    engines: {node: '>=v12.22.12'}
+    dev: false
+
+  /@texonom/nutils@1.1.1:
+    resolution: {integrity: sha512-WSQOrVXM45hOFG9mMkTqk2iH7Tm3jHLnLpH0nrU5GuMeQpezgBvsCwhG0k7QbkHSiWRXGavRU03lAlU1rXiazQ==}
+    engines: {node: '>=v12.22.12'}
+    dependencies:
+      '@texonom/ntypes': 1.1.1
+      is-url-superb: 6.1.0
+      mem: 9.0.2
+      normalize-url: 7.2.0
+      p-queue: 7.3.4
+    dev: false
 
   /@types/chai-subset@1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
