@@ -2,7 +2,7 @@ import { OpenAI } from 'langchain/llms/openai'
 import { RetrievalQAChain } from 'langchain/chains'
 import { HNSWLib } from 'langchain/vectorstores/hnswlib'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
-import { NotionAPI } from '@3bases/notion-client'
+import { NotionAPI } from '@texonom/nclient'
 import { Document } from 'langchain/document'
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
 
@@ -23,7 +23,7 @@ export class NotionQA extends NotionAI<OpenAI, RetrievalQAChain, HNSWLib> {
     this.chain = RetrievalQAChain.fromLLM(this.llm, this.retriever)
   }
 
-  async ingest(id: string, path: string = 'store.pkl') {
+  async ingest(id: string, path: string = 'store') {
     const notionClient = new NotionAPI()
     const page = notionClient.getPage(id)
     const splitter = new RecursiveCharacterTextSplitter({ chunkSize: 10, chunkOverlap: 1 })

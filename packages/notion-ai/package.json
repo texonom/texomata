@@ -24,10 +24,10 @@
     "pu": "pnpm publish"
   },
   "dependencies": {
-    "@3bases/notion-client": "1.1.0",
-    "@xenova/transformers": "^2.0.2",
+    "@texonom/nclient": "1.1.1",
+    "@xenova/transformers": "^2.1.1",
     "hnswlib-node": "^1.4.2",
-    "langchain": "^0.0.86"
+    "langchain": "^0.0.92"
   },
   "standard-version": {
     "skip": {
