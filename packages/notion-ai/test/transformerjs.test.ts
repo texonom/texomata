@@ -7,7 +7,9 @@ import type { QuestionAnsweringPipeline } from '@xenova/transformers'
 test(
   `Ask Question`,
   async () => {
-    const pipe: QuestionAnsweringPipeline = await pipeline('text2text-generation', 'Xenova/gpt2', { quantized: false })
+    const pipe: QuestionAnsweringPipeline = await pipeline('text2text-generation', 'Xenova/distilbart-cnn-6-6', {
+      quantized: true
+    })
     const out = await pipe(
       'Tell me about Relative Mechanics',
       `
