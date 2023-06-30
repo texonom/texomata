@@ -27,7 +27,7 @@
     "@texonom/nclient": "1.1.1",
     "@xenova/transformers": "^2.3.0",
     "hnswlib-node": "^1.4.2",
-    "langchain": "^0.0.96"
+    "langchain": "^0.0.100"
   },
   "standard-version": {
     "skip": {
